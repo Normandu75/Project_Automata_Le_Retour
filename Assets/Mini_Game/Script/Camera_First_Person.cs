@@ -15,13 +15,16 @@ public class Camera_1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Get mouse input
         float InputX = Input.GetAxis("Mouse X") * MouseSensitivity;
         float InputY = Input.GetAxis("Mouse Y") * MouseSensitivity;
 
+        //Get camera rotation
         cameraVerticalAngle -= InputY;
         cameraVerticalAngle = Mathf.Clamp(cameraVerticalAngle, -90f, 90f);
         transform.localEulerAngles = Vector3.right * cameraVerticalAngle;
 
+        //Get player rotation
         player.Rotate(Vector3.up * InputX);
     }
 }

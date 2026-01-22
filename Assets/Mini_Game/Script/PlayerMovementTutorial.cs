@@ -77,6 +77,11 @@ public class PlayerMovementTutorial : MonoBehaviour
 
             Invoke(nameof(ResetJump), jumpCooldown);
         }
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            ReverseGravity();
+        }
     }
 
     private void MovePlayer()
@@ -115,5 +120,12 @@ public class PlayerMovementTutorial : MonoBehaviour
     private void ResetJump()
     {
         readyToJump = true;
+    }
+
+    private void ReverseGravity()
+    {
+        Physics.gravity = -Physics.gravity;
+
+        transform.Rotate(180f, 0f, 0f);
     }
 }
