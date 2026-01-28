@@ -17,13 +17,13 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         Collider[] colliders = Physics.OverlapSphere(transform.position, pushRadius); 
 
-        foreach(Collider pushedObjec in colliders)
+        foreach(Collider pushedObject in colliders)
         {
-            if (pushedObjec.CompareTag("Box"))
+            if (pushedObject.CompareTag("Box"))
             {
-                Rigidbody pushedBody = pushedObjec.GetComponent<Rigidbody>();
+                Rigidbody pushedBody = pushedObject.GetComponent<Rigidbody>();
 
-                pushedBody.AddExplosionForce(pushAmount, Vector3.up, pushRadius); 
+                pushedBody.AddExplosionForce(pushAmount, transform.position, pushRadius); 
             }
         }
     }

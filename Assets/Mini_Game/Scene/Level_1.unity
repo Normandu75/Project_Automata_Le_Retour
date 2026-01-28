@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 114499621}
   - component: {fileID: 114499620}
   m_Layer: 3
-  m_Name: Cube (1)
+  m_Name: Mur
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -230,6 +230,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114499618}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &122307657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 122307658}
+  m_Layer: 0
+  m_Name: GameObject_Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &122307658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122307657}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -21.22913, y: 0, z: 8.33242}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1580184966}
+  - {fileID: 1565976443}
+  - {fileID: 2058436659}
+  - {fileID: 1770903866}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &294405079
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,7 +869,7 @@ GameObject:
   - component: {fileID: 988659465}
   - component: {fileID: 988659464}
   m_Layer: 3
-  m_Name: Cube
+  m_Name: Mur
   m_TagString: Ceiling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -945,7 +980,7 @@ GameObject:
   - component: {fileID: 1225576206}
   - component: {fileID: 1225576205}
   m_Layer: 3
-  m_Name: Cube (2)
+  m_Name: Mur
   m_TagString: Ceiling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1239,7 +1274,7 @@ GameObject:
   - component: {fileID: 1270635587}
   - component: {fileID: 1270635586}
   m_Layer: 3
-  m_Name: Cube (2)
+  m_Name: Mur
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1350,7 +1385,7 @@ GameObject:
   - component: {fileID: 1550222474}
   - component: {fileID: 1550222473}
   m_Layer: 3
-  m_Name: Cube (3)
+  m_Name: Mur
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1462,7 +1497,7 @@ GameObject:
   - component: {fileID: 1565976440}
   - component: {fileID: 1565976439}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Caisse
   m_TagString: Box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1580,12 +1615,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565976438}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.91, y: 2.46, z: 2.40928}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 22.13913, y: 2.46, z: -5.9231405}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 122307658}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1568445285
 GameObject:
@@ -1600,7 +1635,7 @@ GameObject:
   - component: {fileID: 1568445288}
   - component: {fileID: 1568445287}
   m_Layer: 3
-  m_Name: Cube (1)
+  m_Name: Mur
   m_TagString: Ceiling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1712,7 +1747,7 @@ GameObject:
   - component: {fileID: 1580184963}
   - component: {fileID: 1580184962}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Caisse
   m_TagString: Box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1830,12 +1865,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580184961}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9, y: 1.46, z: 2.40928}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 22.12913, y: 1.46, z: -5.9231405}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 122307658}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1770903861
 GameObject:
@@ -1851,7 +1886,7 @@ GameObject:
   - component: {fileID: 1770903863}
   - component: {fileID: 1770903862}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: Caisse
   m_TagString: Box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1969,12 +2004,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770903861}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.06, y: 2.72, z: 2.40928}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.28913, y: 2.72, z: -5.9231405}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 122307658}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1773354374
 GameObject:
@@ -1989,7 +2024,7 @@ GameObject:
   - component: {fileID: 1773354377}
   - component: {fileID: 1773354376}
   m_Layer: 3
-  m_Name: Cube (3)
+  m_Name: Mur
   m_TagString: Ceiling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2100,7 +2135,7 @@ GameObject:
   - component: {fileID: 1993902447}
   - component: {fileID: 1993902446}
   m_Layer: 3
-  m_Name: Cube
+  m_Name: Mur
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2212,7 +2247,7 @@ GameObject:
   - component: {fileID: 2058436656}
   - component: {fileID: 2058436655}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Caisse
   m_TagString: Box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2330,12 +2365,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058436654}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.06, y: 1.49, z: 2.40928}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.28913, y: 1.49, z: -5.9231405}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 122307658}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -2346,7 +2381,4 @@ SceneRoots:
   - {fileID: 294405083}
   - {fileID: 578024802}
   - {fileID: 1249617609}
-  - {fileID: 1580184966}
-  - {fileID: 1565976443}
-  - {fileID: 2058436659}
-  - {fileID: 1770903866}
+  - {fileID: 122307658}
