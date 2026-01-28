@@ -65,11 +65,6 @@ public class PlayerMovementTutorial : MonoBehaviour
             rb.linearDamping = groundDrag;
         else
             rb.linearDamping = 0;
-        //
-        //
-        //
-        //
-        Debug.Log(grounded);
     }
 
     private void FixedUpdate()
@@ -109,7 +104,7 @@ public class PlayerMovementTutorial : MonoBehaviour
 
                 //Debug.Log(cameraAngle);
 
-                transform.rotation = Quaternion.Euler(cameraAngle, 0f, 0f);
+                transform.rotation = Quaternion.Euler(0f, 0f, cameraAngle);
             }
 
             if(ceiling == true)
@@ -118,7 +113,7 @@ public class PlayerMovementTutorial : MonoBehaviour
 
                 //Debug.Log(cameraAngle);
 
-                transform.rotation = Quaternion.Euler(cameraAngle, 0f, 0f);
+                transform.rotation = Quaternion.Euler(0f, 0f, cameraAngle);
             }
         }
     }
