@@ -17,12 +17,15 @@ public class Camera_1 : MonoBehaviour
     {
         //Get mouse input
         float InputX = Input.GetAxis("Mouse X") * MouseSensitivity;
+
         float InputY = Input.GetAxis("Mouse Y") * MouseSensitivity;
 
         //Get camera rotation
         cameraVerticalAngle -= InputY;
+
         cameraVerticalAngle = Mathf.Clamp(cameraVerticalAngle, -90f, 90f);
-        transform.localEulerAngles = Vector3.right * cameraVerticalAngle;
+
+        transform.localRotation = Quaternion.Euler(cameraVerticalAngle, 0f, 0f);
 
         //Get player rotation
         player.Rotate(Vector3.up * InputX);

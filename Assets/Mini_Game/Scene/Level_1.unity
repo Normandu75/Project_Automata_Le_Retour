@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 114499620}
   m_Layer: 3
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
@@ -243,8 +243,8 @@ GameObject:
   - component: {fileID: 294405081}
   - component: {fileID: 294405080}
   m_Layer: 3
-  m_Name: Floor
-  m_TagString: Untagged
+  m_Name: Ceiling
+  m_TagString: Ceiling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
@@ -335,7 +335,7 @@ Transform:
   m_GameObject: {fileID: 294405079}
   serializedVersion: 2
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0.5, y: 6.97, z: 0.5}
+  m_LocalPosition: {x: 0.29319584, y: 12.256298, z: 0.5}
   m_LocalScale: {x: 10.750862, y: 1, z: 11.794523}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -671,7 +671,7 @@ GameObject:
   - component: {fileID: 578024799}
   m_Layer: 3
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
@@ -762,7 +762,7 @@ Transform:
   m_GameObject: {fileID: 578024798}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.35, z: 0.5}
+  m_LocalPosition: {x: 0.7159461, y: 0.35379457, z: 0.5}
   m_LocalScale: {x: 10.750862, y: 1, z: 11.794523}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -835,7 +835,7 @@ GameObject:
   - component: {fileID: 988659464}
   m_Layer: 3
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Ceiling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
@@ -946,7 +946,7 @@ GameObject:
   - component: {fileID: 1225576205}
   m_Layer: 3
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Ceiling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
@@ -1150,7 +1150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovementTutorial
   moveSpeed: 2
   groundDrag: 1
-  jumpForce: 500
+  jumpForce: 5
   jumpCooldown: 1
   airMultiplier: 1
   walkSpeed: 0
@@ -1225,7 +1225,7 @@ GameObject:
   - component: {fileID: 1270635586}
   m_Layer: 3
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
@@ -1336,7 +1336,7 @@ GameObject:
   - component: {fileID: 1550222473}
   m_Layer: 3
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
@@ -1447,7 +1447,7 @@ GameObject:
   - component: {fileID: 1568445287}
   m_Layer: 3
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Ceiling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
@@ -1558,7 +1558,7 @@ GameObject:
   - component: {fileID: 1773354376}
   m_Layer: 3
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Ceiling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
@@ -1669,7 +1669,7 @@ GameObject:
   - component: {fileID: 1993902446}
   m_Layer: 3
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
