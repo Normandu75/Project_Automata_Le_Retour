@@ -54,7 +54,7 @@ public class PlayerMovementTutorial : MonoBehaviour
     private void Update()
     {
         // ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
+        grounded = Physics.Raycast(transform.position, -transform.up, playerHeight * 0.5f + 0.3f, whatIsGround);
 
         MyInput();
 
@@ -65,6 +65,11 @@ public class PlayerMovementTutorial : MonoBehaviour
             rb.linearDamping = groundDrag;
         else
             rb.linearDamping = 0;
+        //
+        //
+        //
+        //
+        Debug.Log(grounded);
     }
 
     private void FixedUpdate()
