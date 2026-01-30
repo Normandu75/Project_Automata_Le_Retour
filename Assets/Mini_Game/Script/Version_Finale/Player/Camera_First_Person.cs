@@ -6,10 +6,11 @@ public class Camera_1 : MonoBehaviour
     public float MouseSensitivity = 2f;
     float cameraVerticalAngle = 0f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
+        OnplicationFocus(true);
     }
 
     // Update is called once per frame
@@ -30,4 +31,20 @@ public class Camera_1 : MonoBehaviour
         //Get player rotation
         player.Rotate(Vector3.up * InputX);
     }
+
+    void OnplicationFocus(bool focus)
+    {
+        if (focus)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+
+            Cursor.visible = false;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+
+            Cursor.visible = true;
+        }
+    }    
 }
