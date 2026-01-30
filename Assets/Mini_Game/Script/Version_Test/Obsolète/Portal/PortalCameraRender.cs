@@ -103,6 +103,8 @@ public class PortalCamera : MonoBehaviour
         portalCamera.projectionMatrix = newMatrix;
 
         // Render the camera to its render target.
-        UniversalRenderPipeline.RenderSingleCamera(SRC, portalCamera);
+        //UniversalRenderPipeline.RenderSingleCamera(SRC, portalCamera);
+        //UniversalRenderer.SingleCameraRequestRenderPipeline.SubmitRenderRequest(SRC, portalCamera);
+        
     }
 }
