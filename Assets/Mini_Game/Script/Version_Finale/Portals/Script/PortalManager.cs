@@ -6,14 +6,10 @@ public class PortalManager : MonoBehaviour
     public Transform APos; //create APos Object on Portal 1
     public Transform BPos; //create APos Object on Portal 2
     public PlayerMovementTutorial PM;
-    private float delayTime = 5f;
+    //private float delayTime = 5f;
 
     private void OnTriggerEnter(Collider col)
     {
-        /* IEnumerator DelayAction(float delayTime)
-        {
-            yield return new WaitForSeconds(delayTime);
-        } */ // COROUTINE non fonctionnelle. 
 
         if (col.CompareTag("Portal A"))
         {
@@ -21,7 +17,6 @@ public class PortalManager : MonoBehaviour
             PM.enabled = false; 
             transform.position = BPos.transform.position;
             transform.rotation = new Quaternion(transform.rotation.x, BPos.rotation.y, transform.rotation.z, transform.rotation.w); 
-             // COROUTINE non fonctionnelle. StartCoroutine(DelayAction(delayTime));
             PM.enabled = true; 
             
         }
@@ -32,7 +27,6 @@ public class PortalManager : MonoBehaviour
             PM.enabled = false; 
             transform.position = APos.transform.position;
             transform.rotation = new Quaternion(transform.rotation.x, APos.rotation.y, transform.rotation.z, transform.rotation.w); 
-            // COROUTINE non fonctionnelle.  StartCoroutine(DelayAction(delayTime));
             PM.enabled = true; 
         }
     }
