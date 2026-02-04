@@ -419,6 +419,37 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &296983973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 296983974}
+  m_Layer: 0
+  m_Name: Attack_Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &296983974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296983973}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.499, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1586075112}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &309538286
 GameObject:
   m_ObjectHideFlags: 0
@@ -1731,6 +1762,7 @@ GameObject:
   - component: {fileID: 1586075108}
   - component: {fileID: 1586075107}
   - component: {fileID: 1586075113}
+  - component: {fileID: 1586075114}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -1883,6 +1915,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 283626683}
+  - {fileID: 296983974}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1586075113
@@ -1899,6 +1932,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   pushAmount: 250
   pushRadius: 4
+--- !u!114 &1586075114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586075105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 079f03cd325a723448f83de0184ec853, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ThrowingTutorial
+  cam: {fileID: 283626683}
+  attackPoint: {fileID: 296983974}
+  objectToThrow: {fileID: 3294919180069424262, guid: 1be384b0ee7d9dc4f8b45b84ceb379f7, type: 3}
+  totalThrows: 100
+  throwCooldown: 0.1
+  throwKey: 324
+  throwForce: 35
+  throwUpwardForce: 0
 --- !u!1 &1775451416
 GameObject:
   m_ObjectHideFlags: 0
