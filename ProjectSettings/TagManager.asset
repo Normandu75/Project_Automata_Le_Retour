@@ -7,6 +7,8 @@ TagManager:
   - Ceiling
   - Floor
   - Box
+  - Portal B
+  - Portal A
   layers:
   - Default
   - TransparentFX
@@ -14,7 +16,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
