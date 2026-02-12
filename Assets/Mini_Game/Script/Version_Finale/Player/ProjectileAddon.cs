@@ -6,7 +6,7 @@ public class ProjectileAddon : MonoBehaviour
 {
     private Rigidbody rb;
 
-    public GameObject objectToSpawn;
+    //public GameObject objectToSpawn;
 
     private bool targetHit;
 
@@ -33,7 +33,7 @@ public class ProjectileAddon : MonoBehaviour
         Vector3 pos = contact.point;
 
         // spawn designated object at contact point
-        Instantiate(objectToSpawn, pos, Quaternion.identity);
+        //Instantiate(objectToSpawn, pos, Quaternion.identity);
 
         // make sure projectile moves with target
         transform.SetParent(collision.transform);
