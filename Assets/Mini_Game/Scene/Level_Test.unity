@@ -1087,7 +1087,7 @@ GameObject:
   - component: {fileID: 931994826}
   - component: {fileID: 931994825}
   - component: {fileID: 931994824}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: Mur
   m_TagString: Ceiling
   m_Icon: {fileID: 0}
@@ -1103,8 +1103,8 @@ Transform:
   m_GameObject: {fileID: 931994822}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.45391712, y: 0.771, z: -0.0008478504}
-  m_LocalScale: {x: 0.84979945, y: 0.7046087, z: 0.0930158}
+  m_LocalPosition: {x: 0.45391712, y: 2.18, z: -0.0008478504}
+  m_LocalScale: {x: 0.84979945, y: 3.5, z: 0.0930158}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 934037382}
@@ -1491,7 +1491,7 @@ GameObject:
   - component: {fileID: 1008139603}
   - component: {fileID: 1008139602}
   - component: {fileID: 1008139601}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: Mur
   m_TagString: Ceiling
   m_Icon: {fileID: 0}
@@ -1507,8 +1507,8 @@ Transform:
   m_GameObject: {fileID: 1008139599}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.45019647, y: 0.793, z: -0.0008478504}
-  m_LocalScale: {x: 0.84979945, y: 0.62676, z: 0.0930158}
+  m_LocalPosition: {x: -0.45019647, y: 2.2, z: -0.0008478504}
+  m_LocalScale: {x: 0.84979945, y: 3.5, z: 0.0930158}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 934037382}
@@ -1602,7 +1602,7 @@ GameObject:
   - component: {fileID: 1016744682}
   - component: {fileID: 1016744681}
   - component: {fileID: 1016744680}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: Mur
   m_TagString: Ceiling
   m_Icon: {fileID: 0}
@@ -1618,7 +1618,7 @@ Transform:
   m_GameObject: {fileID: 1016744678}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0018603142, y: -0.63, z: -0.45707655}
+  m_LocalPosition: {x: 0.0018603142, y: 2.18, z: -0.45707655}
   m_LocalScale: {x: 0.99642533, y: 3.5, z: 0.08478512}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2807,7 +2807,7 @@ GameObject:
   - component: {fileID: 1775451420}
   - component: {fileID: 1775451419}
   - component: {fileID: 1775451418}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: Mur
   m_TagString: Ceiling
   m_Icon: {fileID: 0}
@@ -2823,8 +2823,8 @@ Transform:
   m_GameObject: {fileID: 1775451416}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0018603142, y: 0.76, z: 0.4574157}
-  m_LocalScale: {x: 0.99642533, y: 0.69548, z: 0.08478512}
+  m_LocalPosition: {x: 0.0018603142, y: 2.17, z: 0.4574157}
+  m_LocalScale: {x: 0.99642533, y: 3.5, z: 0.08478512}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 934037382}
