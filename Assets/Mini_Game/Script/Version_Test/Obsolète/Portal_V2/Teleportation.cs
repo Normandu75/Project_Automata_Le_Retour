@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Teleportation : MonoBehaviour
@@ -39,5 +40,15 @@ public class Teleportation : MonoBehaviour
         // Rotation
         Quaternion difference = OtherPortal.transform.rotation * Quaternion.Inverse(transform.rotation * Quaternion.Euler(0, 180, 0));
         objectToTeleport.rotation = difference * objectToTeleport.rotation;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+      other.gameObject.layer = 7;  
+    }
+
+        private void OnTriggerExit(Collider other)
+    {
+      other.gameObject.layer = 6;  
     }
 }
