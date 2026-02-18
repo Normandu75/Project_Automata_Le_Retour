@@ -1,29 +1,32 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class ForcePush : MonoBehaviour
 {
-    public float pushAmount; 
+    public float pushAmount;
     public float pushRadius;
 
     private void Update()
     {
-        if (Input .GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            DoPush(); 
+            DoPush();
+            Debug.Log("Push executed!");
         }
     }
 
     private void DoPush()
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, pushRadius); 
+        Collider[] colliders = Physics.OverlapSphere(transform.position, pushRadius);
 
-        foreach(Collider pushedObject in colliders)
+        foreach (Collider pushedObject in colliders)
         {
             if (pushedObject.CompareTag("Box"))
             {
                 Rigidbody pushedBody = pushedObject.GetComponent<Rigidbody>();
-
-                pushedBody.AddExplosionForce(pushAmount, transform.position, pushRadius); 
+                if (pushedBody != null)
+                {
+                    pushedBody.AddExplosionForce(pushAmount, transform.position, pushRadius);
+                }
             }
         }
     }
