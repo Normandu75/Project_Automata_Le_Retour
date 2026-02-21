@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class PlayerMovementTutorial : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
     public float moveSpeed;
@@ -91,27 +91,27 @@ public class PlayerMovementTutorial : MonoBehaviour
             Invoke(nameof(ResetJump), jumpCooldown);
         }
 
+        // when to reverse gravity
         if (Input.GetKeyDown(KeyCode.G))
         {
+            //Enable gravity reversal
             ReverseGravity();
         }
 
         if (isGravityReversed == true)
         {
+            // Rotate the camera to match the new gravity direction
             if (floor == true)
             {
                 cameraAngle = Mathf.MoveTowards(cameraAngle, 180f, 120f * Time.deltaTime);
 
-                //Debug.Log(cameraAngle);
-
                 transform.rotation = Quaternion.Euler(0f, 0f, cameraAngle);
             }
 
+            // Rotate the camera back to normal when gravity is reversed again
             if(ceiling == true)
             {
                 cameraAngle = Mathf.MoveTowards(cameraAngle, 0f, 120f * Time.deltaTime);
-
-                //Debug.Log(cameraAngle);
 
                 transform.rotation = Quaternion.Euler(0f, 0f, cameraAngle);
             }
@@ -154,48 +154,73 @@ public class PlayerMovementTutorial : MonoBehaviour
     }
     private void ResetJump()
     {
+        // reset jumping again after cooldown
         readyToJump = true;
     }
 
     private void ReverseGravity()
     {
+        // Toggle gravity reversal
         isGravityReversed = true;
 
+        // Disable player movement while gravity is reversed
         canMove = false;
     
+        // Reverse the gravity direction
         Physics.gravity = -Physics.gravity;
+
+        // Disable walls colliders while gravity is reversed
+        GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall");
+        foreach (GameObject wall in walls)
+        {
+            wall.GetComponent<BoxCollider>().enabled = false;
+        }
     }
 
         void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Floor"))
         {
+            // Disable gravity reversal when player touches the floor
             isGravityReversed = false;
 
+            // Enable player movement when player touches the floor
             canMove = true;
 
+            // Set floor state
             floor = true;
 
-            Debug.Log(floor);
-
+            // Set ceiling state
             ceiling = false;
 
-            Debug.Log(ceiling);
+            // Enable wall colliders when player touches the floor
+            GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall");
+            foreach (GameObject wall in walls)
+            {
+                wall.GetComponent<BoxCollider>().enabled = true;
+            }
         }
 
         if (collision.gameObject.CompareTag("Ceiling"))
         {
+            // Disable gravity reversal when player touches the ceiling
             isGravityReversed = false;
 
+            // Enable player movement when player touches the ceiling
             canMove = true;
 
+            // Set floor state
             floor = false;
 
-            Debug.Log(floor);
-
+            // Set ceiling state
             ceiling = true;
 
-            Debug.Log(ceiling);
+            // Enable wall colliders when player touches the ceiling
+            GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall");
+            foreach (GameObject wall in walls)
+            {
+                wall.GetComponent<BoxCollider>().enabled = true;
+            }
         }
     }
 }

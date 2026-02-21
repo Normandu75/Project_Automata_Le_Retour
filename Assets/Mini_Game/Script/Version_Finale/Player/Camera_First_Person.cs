@@ -8,9 +8,11 @@ public class Camera_1 : MonoBehaviour
 
     void Start()
     {
+        // Lock the cursor to the center of the screen
         Cursor.lockState = CursorLockMode.Locked;
 
-        OnplicationFocus(true);
+        // Call OnApplicationFocus to set the initial cursor state
+        OnApplicationFocus(true);
     }
 
     // Update is called once per frame
@@ -24,16 +26,19 @@ public class Camera_1 : MonoBehaviour
         //Get camera rotation
         cameraVerticalAngle -= InputY;
 
+        // Clamp the camera's vertical angle to prevent flipping
         cameraVerticalAngle = Mathf.Clamp(cameraVerticalAngle, -90f, 90f);
 
+        // Apply camera rotation
         transform.localRotation = Quaternion.Euler(cameraVerticalAngle, 0f, 0f);
 
         //Get player rotation
         player.Rotate(Vector3.up * InputX);
     }
 
-    void OnplicationFocus(bool focus)
+    void OnApplicationFocus(bool focus)
     {
+        // Lock or unlock (visibility too) the cursor based on application focus
         if (focus)
         {
             Cursor.lockState = CursorLockMode.Locked;

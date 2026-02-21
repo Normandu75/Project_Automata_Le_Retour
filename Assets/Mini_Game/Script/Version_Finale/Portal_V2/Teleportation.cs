@@ -5,19 +5,6 @@ using UnityEngine;
 public class Teleportation : MonoBehaviour
 {
     public Teleportation OtherPortal;
-    //public float rightOffset = 0f; 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerStay(Collider other)
     {
@@ -35,7 +22,6 @@ public class Teleportation : MonoBehaviour
         // Position
         Vector3 localPosition = transform.worldToLocalMatrix.MultiplyPoint3x4(objectToTeleport.position);
         localPosition = new Vector3(-localPosition.x, localPosition.y, -localPosition.z);
-        //localPosition.y += rightOffset; 
         objectToTeleport.position = OtherPortal.transform.localToWorldMatrix.MultiplyPoint3x4(localPosition);
 
         // Rotation

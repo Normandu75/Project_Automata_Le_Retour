@@ -846,7 +846,7 @@ GameObject:
   - component: {fileID: 548814943}
   m_Layer: 8
   m_Name: Mur
-  m_TagString: Floor
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
@@ -957,7 +957,7 @@ GameObject:
   - component: {fileID: 595095293}
   m_Layer: 8
   m_Name: Mur
-  m_TagString: Floor
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
@@ -1195,7 +1195,7 @@ GameObject:
   - component: {fileID: 931994824}
   m_Layer: 8
   m_Name: Mur
-  m_TagString: Ceiling
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
@@ -1599,7 +1599,7 @@ GameObject:
   - component: {fileID: 1008139601}
   m_Layer: 8
   m_Name: Mur
-  m_TagString: Ceiling
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
@@ -1710,7 +1710,7 @@ GameObject:
   - component: {fileID: 1016744680}
   m_Layer: 8
   m_Name: Mur
-  m_TagString: Ceiling
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
@@ -1946,7 +1946,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Teleportation
   OtherPortal: {fileID: 1649397102}
-  rightOffset: 50
 --- !u!1 &1128049211
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,7 +2252,7 @@ GameObject:
   - component: {fileID: 1404281450}
   m_Layer: 8
   m_Name: Mur
-  m_TagString: Floor
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
@@ -2503,7 +2502,7 @@ GameObject:
   - component: {fileID: 1489289404}
   m_Layer: 8
   m_Name: Mur
-  m_TagString: Floor
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
@@ -2721,7 +2720,6 @@ GameObject:
   - component: {fileID: 1586075108}
   - component: {fileID: 1586075107}
   - component: {fileID: 1586075113}
-  - component: {fileID: 1586075114}
   - component: {fileID: 1586075115}
   m_Layer: 6
   m_Name: Character
@@ -2892,26 +2890,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   pushAmount: 250
   pushRadius: 4
---- !u!114 &1586075114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1586075105}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 079f03cd325a723448f83de0184ec853, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ThrowingTutorial
-  cam: {fileID: 283626683}
-  attackPoint: {fileID: 296983974}
-  objectToThrow: {fileID: 7941099679345135953, guid: 2017455dc8a50c64ab607e6539446a6a, type: 3}
-  totalThrows: 100
-  throwCooldown: 0.1
-  throwKey: 324
-  throwForce: 35
-  throwUpwardForce: 0
 --- !u!114 &1586075115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3012,7 +2990,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Teleportation
   OtherPortal: {fileID: 1122474392}
-  rightOffset: 50
 --- !u!1 &1775451416
 GameObject:
   m_ObjectHideFlags: 0
@@ -3027,7 +3004,7 @@ GameObject:
   - component: {fileID: 1775451418}
   m_Layer: 8
   m_Name: Mur
-  m_TagString: Ceiling
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
