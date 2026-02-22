@@ -1,14 +1,16 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class ForcePush : MonoBehaviour
 {
     public float pushAmount; 
     public float pushRadius;
 
     private void Update()
     {
-        if (Input .GetMouseButtonDown(0))
+        if (Input .GetKeyDown(KeyCode.E))
         {
+            Debug.Log("Push Activated");
+
             // Call the DoPush method when the left mouse button is clicked
             DoPush(); 
         }
